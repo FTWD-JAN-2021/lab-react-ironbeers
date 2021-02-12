@@ -7,6 +7,7 @@ import Home from './components/Home'
 import RandomBeer from './components/RandomBeer'
 import NewBeer from './components/NewBeer'
 import AllBeers from './components/AllBeers'
+import BeerDetail from './components/BeerDetail'
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route exact path="/RandomBeer" render={(props) => <RandomBeer {...props} />} />
         <Route exact path="/NewBeer" render={(props) => <NewBeer {...props} />} />
         <Route exact path="/AllBeers" render={(props) => <AllBeers {...props} />} />
-
+        <Route exact path="/allBeers/:id" render={(props) => <BeerDetail {...props} />} />
       </Switch>
     </div>
   );
