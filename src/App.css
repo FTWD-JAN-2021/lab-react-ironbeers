@@ -47,3 +47,17 @@
 #NavCss a {
   color:greenyellow;
 }
+
+
+
+.beerList img {
+  display: flex;
+  flex-direction: column;
+  width:10vw;
+  
+}
+
+.gridBeer {
+  display:flex;
+  flex-wrap: wrap;
+}
