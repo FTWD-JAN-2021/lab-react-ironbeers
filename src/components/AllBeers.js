@@ -1,5 +1,6 @@
 import React, { useEffect, useState} from 'react';
 import axios from 'axios';
+import {Link}  from 'react-router-dom'
 
 
 function AllBeers(props) {
@@ -18,7 +19,8 @@ function AllBeers(props) {
                 return beers.map(eachbeer => {
                     return (
                         <li>
-                            {eachbeer.name} <img src={eachbeer.image_url}/>
+                        <Link to={`/allbeers/${eachbeer._id}`}>{eachbeer.name} </Link> <img src={eachbeer.image_url}/>
+                            
                         </li>
                     )
 
