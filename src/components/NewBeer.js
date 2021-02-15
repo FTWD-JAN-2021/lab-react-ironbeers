@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 function NewBeer(props) {
   const [data, setData] = useState({});
 
+
   function submitForm(e) {
     e.preventDefault();
 
@@ -16,11 +17,6 @@ function NewBeer(props) {
 
   function updateForm(e, t) {
     setData({ ...data, [e.target.id]: e.target.value });
-    // setData((currentFormData) => {
-    //   currentFormData[e.target.id] = e.target.value;
-    //   console.log('form data', currentFormData);
-    //   return { ...currentFormData };
-    // });
   }
   console.log('Data is', data);
 
