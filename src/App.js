@@ -21,6 +21,7 @@ function App() {
         <Route exact path="/AllBeers" render={(props) => <AllBeers {...props} />} />
         <Route exact path="/allBeers/:id" render={(props) => <BeerDetail {...props} />} />
       </Switch>
+      
     </div>
   );
 }
