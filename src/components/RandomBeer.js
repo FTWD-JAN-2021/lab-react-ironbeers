@@ -21,7 +21,12 @@ function RandomBeer(props) {
     
     return (
         <div>
-            <img style={styleRandom} src={beer.image_url}/>,{beer.name}
+        <div>
+            <img style={styleRandom} src={beer.image_url}/>
+        </div>
+        <div>
+            {beer.name}
+        </div>
         </div>
     );
 }
